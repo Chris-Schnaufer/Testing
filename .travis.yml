@@ -1,0 +1,23 @@
+# Superuser for docker commands and such
+sudo: required
+
+# python environment and python version
+language: python
+python: 
+  - "3.6"
+
+matrix:
+  include:
+    - env EXTRACTOR_BRANCH=opendronemap
+    - env EXTRACTOR_BRANCH=clipbyshape
+    - env EXTRACTOR_BRANCH=canopycover
+
+env:
+  global:
+    - FOO=bar
+
+script:
+  - echo "${EXTRACTOR_BRANCH}"
+  - echo "${FOO}"
+  - ./app.py "${EXTRACTOR_BRANCH}" "${FOO}"
+  - env $FOO ./other.py "${EXTRACTOR_BRANCH}"
