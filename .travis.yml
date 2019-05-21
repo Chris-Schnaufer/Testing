@@ -8,9 +8,12 @@ python:
 
 matrix:
   include:
-    - env EXTRACTOR_BRANCH=opendronemap
-    - env EXTRACTOR_BRANCH=clipbyshape
-    - env EXTRACTOR_BRANCH=canopycover
+    - 
+      env EXTRACTOR_BRANCH=opendronemap
+    - 
+      env EXTRACTOR_BRANCH=clipbyshape
+    - 
+      env EXTRACTOR_BRANCH=canopycover
 
 env:
   global:
