@@ -6,6 +6,13 @@ language: python
 python: 
   - "3.6"
 
+# What sources to auto build
+branches:
+  only:
+  - master
+  - develop
+  - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
+  
 matrix:
   include:
     - 
