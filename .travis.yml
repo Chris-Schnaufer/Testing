@@ -12,7 +12,7 @@ branches:
   - master
   - develop
   - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
-  
+
 matrix:
   include:
     - 
@@ -25,6 +25,9 @@ matrix:
 env:
   global:
     - FOO=bar
+
+install:
+  - echo "Install step"
 
 script:
   - echo "${EXTRACTOR_BRANCH}"
