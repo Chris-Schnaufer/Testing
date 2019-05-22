@@ -13,14 +13,14 @@ branches:
   - develop
   - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
 
-#matrix:
-#  include:
-#    - 
-#      env EXTRACTOR_BRANCH=opendronemap
-#    - 
-#      env EXTRACTOR_BRANCH=clipbyshape
-#    - 
-#      env EXTRACTOR_BRANCH=canopycover
+matrix:
+  include:
+    - 
+      env EXTRACTOR_BRANCH=opendronemap
+    - 
+      env EXTRACTOR_BRANCH=clipbyshape
+    - 
+      env EXTRACTOR_BRANCH=canopycover
 
 env:
   global:
