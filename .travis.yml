@@ -13,16 +13,13 @@ branches:
   - develop
   - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
 
-rvm:
-  - 3.6
-
 matrix:
   include:
-    - 
+    - python 3.6
       env EXTRACTOR_BRANCH=opendronemap
-    - 
+    - python 3.6
       env EXTRACTOR_BRANCH=clipbyshape
-    - 
+    - python 3.6
       env EXTRACTOR_BRANCH=canopycover
 
 env:
