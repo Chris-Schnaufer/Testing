@@ -15,11 +15,14 @@ branches:
 
 matrix:
   include:
-    - python: 3.6
+    - name: "Test 1"
+      python: 3.6
       env EXTRACTOR_BRANCH=opendronemap
-    - python: 3.6
+    - name: "Test 2"
+      python: 3.6
       env EXTRACTOR_BRANCH=clipbyshape
-    - python: 3.6
+    - name: "Test 3"
+      python: 3.6
       env EXTRACTOR_BRANCH=canopycover
 
 env:
