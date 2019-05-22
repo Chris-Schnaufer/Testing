@@ -36,4 +36,4 @@ script:
   - echo "${EXTRACTOR_BRANCH}"
   - echo "${FOO}"
   - ./app.py "${EXTRACTOR_BRANCH}" "${FOO}"
-  - env $FOO ./other.py "${EXTRACTOR_BRANCH}"
+  - ./other.py "${EXTRACTOR_BRANCH}"
