@@ -30,10 +30,10 @@ env:
     - FOO=bar
 
 before_install:
-  - echo "Before install"
+  - echo "Before install:\ $TEST_STRING""
 
 install:
-  - echo "Install step:\ $TEST_STRING"
+  - echo "Install step
 
 script:
   - echo "${EXTRACTOR_BRANCH}"
