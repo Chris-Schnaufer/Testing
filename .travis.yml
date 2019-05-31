@@ -33,7 +33,7 @@ before_install:
   - echo "Before install"
 
 install:
-  - echo "Install step"
+  - echo "Install step:\ $TEST_STRING"
 
 script:
   - echo "${EXTRACTOR_BRANCH}"
