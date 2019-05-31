@@ -17,13 +17,13 @@ matrix:
   include:
     - name: "Test 1"
       python: 3.6
-      env EXTRACTOR_BRANCH=opendronemap
+      env: EXTRACTOR_BRANCH=opendronemap
     - name: "Test 2"
       python: 3.6
-      env EXTRACTOR_BRANCH=clipbyshape
+      env: EXTRACTOR_BRANCH=clipbyshape
     - name: "Test 3"
       python: 3.6
-      env EXTRACTOR_BRANCH=canopycover
+      env: EXTRACTOR_BRANCH=canopycover
 
 env:
   global:
