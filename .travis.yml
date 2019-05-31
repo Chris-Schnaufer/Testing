@@ -25,7 +25,7 @@ matrix:
     - name: "Test 3"
       env: EXTRACTOR_BRANCH=canopycover
       env: TEST_STRING=Test3String
-      if: branch =~ /^mas$/
+      if: branch =~ /^mas.*$/
 
 env:
   global:
