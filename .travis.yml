@@ -18,12 +18,14 @@ matrix:
     - name: "Test 1"
       env: EXTRACTOR_BRANCH=opendronemap
       env: TEST_STRING=Test1String
+      if: branch = master
     - name: "Test 2"
       env: EXTRACTOR_BRANCH=clipbyshape
       env: TEST_STRING=Test2String
     - name: "Test 3"
       env: EXTRACTOR_BRANCH=canopycover
       env: TEST_STRING=Test3String
+      if: branch =~ /^mas$/
 
 env:
   global:
